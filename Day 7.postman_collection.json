@@ -1,0 +1,509 @@
+{
+	"info": {
+		"_postman_id": "bd42965c-df09-4c03-8f63-8a2351f25b1a",
+		"name": "Day 7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "624374"
+	},
+	"item": [
+		{
+			"name": "newsapi.org",
+			"item": [
+				{
+					"name": "Top Headlines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=Apple&from=2022-08-23&sortBy=popularity&apiKey={{API_KEY}}",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Apple"
+								},
+								{
+									"key": "from",
+									"value": "2022-08-23"
+								},
+								{
+									"key": "sortBy",
+									"value": "popularity"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{API_KEY}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All articles mentioning Apple from yesterday, sorted by popular publishers first",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=apple&from=2022-08-22&to=2022-08-22&sortBy=popularity&apiKey={{API_KEY}}",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "apple"
+								},
+								{
+									"key": "from",
+									"value": "2022-08-22"
+								},
+								{
+									"key": "to",
+									"value": "2022-08-22"
+								},
+								{
+									"key": "sortBy",
+									"value": "popularity"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{API_KEY}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All articles about Tesla from the last month, sorted by recent first",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?apiKey={{API_KEY}}&q=tesla&from=2022-07-23&sortBy=publishedAt",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "apiKey",
+									"value": "{{API_KEY}}"
+								},
+								{
+									"key": "q",
+									"value": "tesla"
+								},
+								{
+									"key": "from",
+									"value": "2022-07-23"
+								},
+								{
+									"key": "sortBy",
+									"value": "publishedAt"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top headlines from TechCrunch right now",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?apiKey={{API_KEY}}&sources=techcrunch",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "apiKey",
+									"value": "{{API_KEY}}"
+								},
+								{
+									"key": "sources",
+									"value": "techcrunch"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top business headlines in the US right now",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?apiKey={{API_KEY}}&country=us&category=business",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "apiKey",
+									"value": "{{API_KEY}}"
+								},
+								{
+									"key": "country",
+									"value": "us"
+								},
+								{
+									"key": "category",
+									"value": "business"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "swapi.dev",
+			"item": [
+				{
+					"name": "Films",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http https://swapi.dev/api/films/1/",
+							"protocol": "http https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"films",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Starships",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/starships/9/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"starships",
+								"9",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/vehicles/4/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								"4",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Species",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/species/3/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"species",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Planets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/species/3/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"species",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sepulsa",
+			"item": [
+				{
+					"name": "Get All Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_SEPULSA}}/book?p=1&rp=10&title&isbn",
+							"host": [
+								"{{URL_SEPULSA}}"
+							],
+							"path": [
+								"book"
+							],
+							"query": [
+								{
+									"key": "p",
+									"value": "1"
+								},
+								{
+									"key": "rp",
+									"value": "10"
+								},
+								{
+									"key": "title",
+									"value": null,
+									"description": "filter by title"
+								},
+								{
+									"key": "isbn",
+									"value": null,
+									"description": "filter by isbn"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Book by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_SEPULSA}}/book/5",
+							"host": [
+								"{{URL_SEPULSA}}"
+							],
+							"path": [
+								"book",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_SEPULSA}}/user?p&rp&title&isbn",
+							"host": [
+								"{{URL_SEPULSA}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "p",
+									"value": null,
+									"description": "page number"
+								},
+								{
+									"key": "rp",
+									"value": null,
+									"description": "record per page"
+								},
+								{
+									"key": "title",
+									"value": null,
+									"description": "filter by title"
+								},
+								{
+									"key": "isbn",
+									"value": null,
+									"description": "filter by isbn"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_SEPULSA}}/user/5",
+							"host": [
+								"{{URL_SEPULSA}}"
+							],
+							"path": [
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Data User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"Redi\",\r\n  \"age\": 26,\r\n  \"sex\": \"male\",\r\n  \"client_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_SEPULSA}}/user",
+							"host": [
+								"{{URL_SEPULSA}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"Yansen\",\r\n  \"age\": 16,\r\n  \"sex\": \"male\",\r\n  \"client_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_SEPULSA}}/user/1",
+							"host": [
+								"{{URL_SEPULSA}}"
+							],
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"Yansen\",\r\n  \"age\": 16,\r\n  \"sex\": \"male\",\r\n  \"client_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_SEPULSA}}/user/3",
+							"host": [
+								"{{URL_SEPULSA}}"
+							],
+							"path": [
+								"user",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
